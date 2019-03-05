@@ -1,0 +1,10 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: myapp
+  buildpack: liberty-for-java
+  path: ./target/myapp-1.0-SNAPSHOT.zip
+  memory: 1024M
+  domain: ng.bluemix.net
+  host: myapp
