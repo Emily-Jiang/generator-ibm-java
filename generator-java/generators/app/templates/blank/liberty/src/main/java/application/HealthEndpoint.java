@@ -7,18 +7,18 @@ import javax.ws.rs.core.Application;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("health")
-public class HealthEndpoint {
+import org.eclipse.microprofile.health.Health;
+import org.eclipse.microprofile.health.HealthCheck;
 
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response healthcheck() {
-      /*
-      if (!healthy) {
-        return Response.status(503).entity("{\"status\":\"DOWN\"}").build();
-      }
-      */
-      return Response.ok("{\"status\":\"UP\"}").build();
-    }
+@Health
+@ApplicationScoped
+public class HealthEndpoint implements HealthCheck{
+
+  @Override
+  public HealthCheckResponse call() {    
+    return HealthCheckResponse.named("service")
+    .withData("healthy", "true")
+    .up().build();
+  }
 
 }

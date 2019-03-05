@@ -17,6 +17,6 @@
 'use strict'
 
 module.exports = exports = {
-  libertyVersion: "[18.0.0.1,)",
-  libertyBetaVersion: '2018.+'
+  libertyVersion: "[19.0.0.1,)",
+  libertyBetaVersion: '2019.+'
 }
