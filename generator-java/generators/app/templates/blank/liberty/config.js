@@ -1,9 +1,9 @@
 {
     "dependencies" : [
       {"groupId" : "javax.servlet", "artifactId" : "javax.servlet-api", "version" : "3.1.0", "scope" : "provided"},
-      {"groupId" : "com.ibm.websphere.appserver.api", "artifactId" : "com.ibm.websphere.appserver.api.servlet", "version" : "1.1.18", "scope" : "provided"},
-      {"groupId" : "com.ibm.websphere.appserver.api", "artifactId" : "com.ibm.websphere.appserver.api.jaxrs20", "version" : "1.0.18", "scope" : "provided"},
-      {"groupId" : "com.ibm.websphere.appserver.api", "artifactId" : "com.ibm.websphere.appserver.api.json", "version" : "1.0.18", "scope" : "provided"},
+      {"groupId" : "com.ibm.websphere.appserver.api", "artifactId" : "com.ibm.websphere.appserver.api.servlet", "version" : "1.1.25", "scope" : "provided"},
+      {"groupId" : "com.ibm.websphere.appserver.api", "artifactId" : "com.ibm.websphere.appserver.api.jaxrs20", "version" : "1.0.25", "scope" : "provided"},
+      {"groupId" : "com.ibm.websphere.appserver.api", "artifactId" : "com.ibm.websphere.appserver.api.json", "version" : "1.0.25", "scope" : "provided"},
   {{#has buildType 'maven'}}
       {"groupId" : "org.eclipse.microprofile", "artifactId" : "microprofile", "version" : "2.1", "scope" : "provided", "type" : "pom"}
   {{/has}}
