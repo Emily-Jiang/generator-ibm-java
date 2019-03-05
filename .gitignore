@@ -44,9 +44,6 @@ projects/*
 **/projects/*
 
 .vscode
-.bluemix
-.cfignore
-.dockerignore
 
 *.DS_Store
 .idea/
